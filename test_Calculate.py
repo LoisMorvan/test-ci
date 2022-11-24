@@ -1,10 +1,9 @@
-import calculator
-
+import calculate
 
 class TestCalculator:
 
     def test_addition(self):
-        assert 4 == calculator.add(8, 2)
+        assert 4 == calculate.add(8, 2)
 
     def test_subtraction(self):
-        assert 2 == calculator.subtract(4, 2)
+        assert 2 == calculate.subtract(4, 2)
