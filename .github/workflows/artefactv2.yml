@@ -6,7 +6,14 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    
+
+    steps:
+    - name: 'Upload Artefact'
+      uses: actions/upload-artifact@v3
+      with:
+        name: my-artefact
+        path: requirements.txt
+
   job_id:
     permissions:
       contents: 'read'
